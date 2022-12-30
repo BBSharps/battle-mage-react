@@ -3,7 +3,7 @@ import roundEnd from "./round-end"
 
 function Card({mage,setMage,cardNo, cardBoardState, setCardBoardState, setText}){
     const handleClick = event => {addCardToBoard(mage,cardNo, setMage, cardBoardState, setCardBoardState, setText)};
-return <div className={mage.hand[cardNo].type + " card"} onClick={handleClick}><h3>{mage.hand[cardNo].type}</h3></div>
+return <div className={mage.hand[cardNo].type + " card"} onClick={handleClick}><h6>{mage.hand[cardNo].type}</h6></div>
 };
 let cardsPlayed = 0
 function addCardToBoard(mage,cardNo, setMage, cardBoardState, setCardBoardState, setText){

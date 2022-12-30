@@ -15,7 +15,8 @@ function App() {
       card4: randomCard(),
       card5: randomCard(),
     },
-    hp: 10,
+    playerHp: 35,
+    aiHp: 35,
   });
   const [cardBoardState, setCardBoardState] = useState({
     spellPlay: { type: "Back", dmg: 0 },

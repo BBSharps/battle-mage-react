@@ -7,12 +7,12 @@
 .mobileWindow {
     background-color: rgb(238, 48, 10);
         border-radius: 16px;
-        width: 700px;
+        width: 320px;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-       padding: 10px;      
+       padding: 10px;     
   }
 
   .text {
@@ -30,13 +30,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-   margin-left: 35%;  
+    margin: 0 auto;
   }
   .boardWindow {
     background-color: rgb(117, 72, 3);
     border-radius: 16px;
     width:auto;
-    height: 55vh;
+    height: 45vh;
     display: grid;
     grid-template-rows: 50% 50% ;
     grid-template-columns: 25% 25% 25% 25%;
@@ -45,36 +45,57 @@
    "spellPlay plPlay1 plPlay2 plPlay3";    
   }
   .spellPlay {
-    margin: 30% 15% 30% 15%;
+       height: 81px;
+    width: 45px;
+    justify-self: center;
 grid-area: spellPlay;
+margin: 10%;
   }
 
   .aiPlay1 {
-    margin: 20%;
+       height: 81px;
+    width: 45px;
+    justify-self: center;
     grid-area: aiPlay1;
+    margin: 10%;
   }
 
   .aiPlay2 {
-    margin: 20%;
+       height: 81px;
+    width: 45px;
+    justify-self: center;
     grid-area: aiPlay2;
+    margin: 10%;
   }
 
   .aiPlay3 {
-    margin: 20%;
+       height: 81px;
+    width: 45px;
+    justify-self: center;
     grid-area: aiPlay3;
+    margin: 10%;
   }
 
   .plPlay1 {
-    margin: 20%;
+    height: 81px;
+    width: 45px;
+    justify-self: center;
     grid-area: plPlay1;
+    margin: 10%;
   }
   .plPlay2 {
-    margin: 20%;
+       height: 81px;
+    width: 45px;
+    justify-self: center;
     grid-area: plPlay2;
+    margin: 10%;
   }
   .plPlay3 {
-    margin: 20%;
+       height: 81px;
+    width: 45px;
+    justify-self: center;
     grid-area: plPlay3;
+    margin: 10%;
   }
   .cardBoard {
     border-radius: 2%;
@@ -85,19 +106,20 @@ grid-area: spellPlay;
     background-color: rgb(238, 10, 189);
     border-radius: 16px;
     width: auto;
-    height: 20vh;
+    height: 22vh;
     display: flex;
-    flex-direction: row;
-   
-   padding: 10px;     
-  
+    flex-direction: row;   
+    margin-top: 1%;
+    justify-content: center;
   }
   .card {
-    height: 90%;
-    width: 10%;
+    height: 81px;
+    width: 45px;
+    justify-self: center;
     border-radius: 2%;
     border-style: double;
-    margin: 0% 5% 0% 5%;
+    margin:1% 1% 1% 3%;
+
   }
   .card h3 {
   text-align: center;
