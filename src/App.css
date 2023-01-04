@@ -1,3 +1,9 @@
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
 .App {
   width: auto;
   height: 100%;
@@ -5,28 +11,31 @@
   justify-content: center;
 }
 .mobileWindow {
-    background-color: rgb(238, 48, 10);
         border-radius: 16px;
         width: 320px;
-        height: 100vh;
+        height: 568px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
        padding: 10px;     
+       background-image: url("./elements/background.png");
+       background-position: top;
   }
 
+
   .text {
-    background-color: aliceblue;
+    background-color: #A40d91;
     width: 90%;
     height: 90%;
     position: fixed;
-
-  }
+    text-align: center;
+    margin: 20px;
+   }
   .spellWindow {
     background-color: rgb(56, 238, 10);
     border-radius: 16px;
-    width: 30vw;
-    height: 10vh;
+    width: 50%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,7 +45,7 @@
     background-color: rgb(117, 72, 3);
     border-radius: 16px;
     width:auto;
-    height: 45vh;
+    height: 45%;
     display: grid;
     grid-template-rows: 50% 50% ;
     grid-template-columns: 25% 25% 25% 25%;
@@ -45,11 +54,15 @@
    "spellPlay plPlay1 plPlay2 plPlay3";    
   }
   .spellPlay {
-       height: 81px;
+    height: 81px;
     width: 45px;
     justify-self: center;
-grid-area: spellPlay;
-margin: 10%;
+    grid-area: spellPlay;
+    margin: 50% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
 
   .aiPlay1 {
@@ -58,14 +71,22 @@ margin: 10%;
     justify-self: center;
     grid-area: aiPlay1;
     margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
 
   .aiPlay2 {
-       height: 81px;
+    height: 81px;
     width: 45px;
     justify-self: center;
     grid-area: aiPlay2;
     margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
 
   .aiPlay3 {
@@ -74,6 +95,10 @@ margin: 10%;
     justify-self: center;
     grid-area: aiPlay3;
     margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
 
   .plPlay1 {
@@ -82,6 +107,10 @@ margin: 10%;
     justify-self: center;
     grid-area: plPlay1;
     margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
   .plPlay2 {
        height: 81px;
@@ -89,6 +118,10 @@ margin: 10%;
     justify-self: center;
     grid-area: plPlay2;
     margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
   .plPlay3 {
        height: 81px;
@@ -96,17 +129,28 @@ margin: 10%;
     justify-self: center;
     grid-area: plPlay3;
     margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
   .cardBoard {
-    border-radius: 2%;
+    border-radius: 5px;
     border-style: double;
-
+  }
+  .cardBoard h3 {
+    text-align: center;
+    }
+  .cardBoard img {
+    width: 37px;
+    height: auto;
+    align-self: center;
   }
   .playerHand {
     background-color: rgb(238, 10, 189);
     border-radius: 16px;
     width: auto;
-    height: 22vh;
+    height: 20%;
     display: flex;
     flex-direction: row;   
     margin-top: 1%;
@@ -116,24 +160,36 @@ margin: 10%;
     height: 81px;
     width: 45px;
     justify-self: center;
-    border-radius: 2%;
+    border-radius: 5px;
     border-style: double;
     margin:1% 1% 1% 3%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
-  .card h3 {
-  text-align: center;
+   .card img {
+    width: 37px;
+    height: auto;
+    align-self: center;
   }
-  .Mana {background-color: rgb(128, 2, 245);}
+  .Mana {
+    background-color: #A40d91;}
   .Fire {
-    background-color: rgb(255, 0, 21);
+    background-color: #A40d0d;
   }
   .Ice {
-    background-color: rgb(175, 242, 245);
+    background-color: #0d97a4;
   }
   .Earth {
-    background-color: rgb(77, 23, 4);
+    background-color: #A4670d;
   }
   .Back {
-    background-color: rgb(214, 236, 9);
+    background-color: #9f91a6;
+    color: #9f91a6;
+    border: 3px double black;
+  }
+  .spell{
+    background-color: #1da40d;
+
   }

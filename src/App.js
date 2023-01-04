@@ -4,6 +4,7 @@ import PlayerHand from "./elements/player-hand";
 import Text from "./elements/text";
 import randomCard from "./elements/random-card";
 import { useState } from "react";
+import backSymbol from "./elements/back-symbol.png";
 import "./App.css";
 
 function App() {
@@ -19,17 +20,42 @@ function App() {
     aiHp: 35,
   });
   const [cardBoardState, setCardBoardState] = useState({
-    spellPlay: { type: "Back", dmg: 0 },
+    spellPlay: { type: "Back", dmg: 0, symbol: backSymbol },
     aiPlay1: randomCard(),
     aiPlay2: randomCard(),
     aiPlay3: randomCard(),
-    plPlay1: { type: "Back", dmg: 0 },
-    plPlay2: { type: "Back", dmg: 0 },
-    plPlay3: { type: "Back", dmg: 0 },
+    plPlay1: { type: "Back", dmg: 0, symbol: backSymbol },
+    plPlay2: { type: "Back", dmg: 0, symbol: backSymbol },
+    plPlay3: { type: "Back", dmg: 0, symbol: backSymbol },
   });
   const [textTrue, setText] = useState({
     true: true,
-    text: "welcome to Battle Mage",
+    text: `welcome to Battle Mage
+
+The Earth smothers the Fire,
+The Fire melts the Ice,
+The Ice cracks the Earth,  
+Mana permiates all.  
+
+Every round in Battle Mage, You and 
+your opponent each play 3 cards.
+The order that cards are played is 
+important. Each card is played 
+againstthe opponents card in the 
+order that they are selected.
+1v1,2v2,3v3.
+
+Mana cards always deal 1 damage.
+Fire cards deal 2 damage or 
+1 against Earth cards.
+Ice cards deal 2 damage or 
+1 against Fire cards.
+Earth cards deal 2 damage or 
+1 against Ice cards.  
+
+You and your opponent each start 
+with 35 Hit Points.The first to have
+0 Hit Points loses`,
   });
   return (
     <div className="App">

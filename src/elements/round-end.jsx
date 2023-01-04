@@ -1,4 +1,5 @@
 import randomCard from "./random-card"
+import backSymbol from "./back-symbol.png"
 
 let round = 0
 
@@ -23,12 +24,19 @@ function roundEnd(mage, setMage,setText,cardBoardState,setCardBoardState){
         nextBoard.aiPlay1 = randomCard()
         nextBoard.aiPlay2 = randomCard()
         nextBoard.aiPlay3 = randomCard()
-        nextBoard.plPlay1 = {type:"Back",dmg:0}
-        nextBoard.plPlay2 = {type:"Back",dmg:0}
-        nextBoard.plPlay3 = {type:"Back",dmg:0}
+        nextBoard.plPlay1 = {type:"Back",dmg:0, symbol:backSymbol}
+        nextBoard.plPlay2 = {type:"Back",dmg:0, symbol:backSymbol}
+        nextBoard.plPlay3 = {type:"Back",dmg:0, symbol:backSymbol}
     setMage(nextMage)
     setCardBoardState(nextBoard)
-    return setText({true:true, text:`round ${round}`})
+    return setText({true:true, text:`round ${round}
+
+
+opponent health ${nextMage.aiHp}
+
+
+
+your health ${nextMage.playerHp}`})
 }
 
 function calculateDamage(compare,to){

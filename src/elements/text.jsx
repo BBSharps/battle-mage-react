@@ -1,6 +1,6 @@
 function Text({textTrue,setText}) {
     const handleClick = event => {textChange(textTrue,setText)};
-    if (textTrue.true) {return <p className="text" onClick={handleClick}>{textTrue.text}</p>}
+    if (textTrue.true) {return <pre className="text" onClick={handleClick}>{textTrue.text}</pre>}
     else {return }
 }
 

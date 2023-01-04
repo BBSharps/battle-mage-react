@@ -1,9 +1,9 @@
 import roundEnd from "./round-end"
-
+import backSymbol from "./back-symbol.png"
 
 function Card({mage,setMage,cardNo, cardBoardState, setCardBoardState, setText}){
     const handleClick = event => {addCardToBoard(mage,cardNo, setMage, cardBoardState, setCardBoardState, setText)};
-return <div className={mage.hand[cardNo].type + " card"} onClick={handleClick}><h6>{mage.hand[cardNo].type}</h6></div>
+return <div className={mage.hand[cardNo].type + " card"} onClick={handleClick}><h6>{mage.hand[cardNo].type}</h6><img src={mage.hand[cardNo].symbol} alt="card"></img></div>
 };
 let cardsPlayed = 0
 function addCardToBoard(mage,cardNo, setMage, cardBoardState, setCardBoardState, setText){
@@ -12,7 +12,7 @@ function addCardToBoard(mage,cardNo, setMage, cardBoardState, setCardBoardState,
     cardsPlayed++ 
     const addToBoard = structuredClone(cardBoardState)
     addToBoard[`plPlay${cardsPlayed}`] = changeHand.hand[cardNo] 
-    changeHand.hand[cardNo] = {type:"Back",dmg:0};
+    changeHand.hand[cardNo] = {type:"Back",dmg:0, symbol:backSymbol};
     setCardBoardState(addToBoard)
     setMage(changeHand)
     if (cardsPlayed === 3){
