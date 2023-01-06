@@ -3,7 +3,9 @@
   margin:0px;
   padding:0px;
   box-sizing: border-box;
+  
 }
+
 .App {
   width: auto;
   height: 100%;
@@ -30,22 +32,50 @@
     position: fixed;
     text-align: center;
     margin: 20px;
+    z-index: 2;
+    font-family: 'Nanum Brush Script', cursive;
+  font-size: 16px;
+  color: white;
    }
   .spellWindow {
-    background-color: rgb(56, 238, 10);
+    background-color: #1da40d;
     border-radius: 16px;
-    width: 50%;
+    padding: 3px 10px 0 0;
+    width: 55%;
     height: 10%;
     display: flex;
+    position: relative; top: 35px;
+    z-index: 1;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     margin: 0 auto;
+    box-shadow: -2px 2px 0px 0px black;
+    
+  }
+  .spell-icon{
+    margin:0;
+    padding: 0;
+    width: auto;
+    height: 45px;
+  }
+  .spell-pop{
+    height: 81px;
+    width: 75px;
+    margin-top: -80px;
+    background-color: #1da40d;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
   }
   .boardWindow {
     background-color: rgb(117, 72, 3);
+    background-image: url("./elements/wood.png");
     border-radius: 16px;
     width:auto;
     height: 45%;
+    padding-top: 15%;
     display: grid;
     grid-template-rows: 50% 50% ;
     grid-template-columns: 25% 25% 25% 25%;
@@ -61,7 +91,7 @@
     margin: 50% 10% 10% 10%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -73,7 +103,7 @@
     margin: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -85,7 +115,7 @@
     margin: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -97,7 +127,7 @@
     margin: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -109,7 +139,7 @@
     margin: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .plPlay2 {
@@ -120,7 +150,7 @@
     margin: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .plPlay3 {
@@ -131,12 +161,16 @@
     margin: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .cardBoard {
     border-radius: 5px;
-    border-style: double;
+    border: double black;
+    font-family: 'Nanum Brush Script', cursive;
+  font-size: 16px;
+  box-shadow: 0px 0px 3px 3px inset #9f91a6;
+  color: white;
   }
   .cardBoard h3 {
     text-align: center;
@@ -147,7 +181,8 @@
     align-self: center;
   }
   .playerHand {
-    background-color: rgb(238, 10, 189);
+    background-color: rgb(128, 100, 59);
+    padding-top: 10px;
     border-radius: 16px;
     width: auto;
     height: 20%;
@@ -155,18 +190,23 @@
     flex-direction: row;   
     margin-top: 1%;
     justify-content: center;
+    background-image: url("./elements/wood.png");
   }
   .card {
     height: 81px;
     width: 45px;
     justify-self: center;
     border-radius: 5px;
-    border-style: double;
+    border: double black;
+    box-shadow: 0px 0px 3px 3px inset #9f91a6;
     margin:1% 1% 1% 3%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
+    font-family: 'Nanum Brush Script', cursive;
+  font-size: 16px;
+  color:whitesmoke;
   }
    .card img {
     width: 37px;
@@ -186,10 +226,14 @@
   }
   .Back {
     background-color: #9f91a6;
+    font-size: 5px;
     color: #9f91a6;
     border: 3px double black;
+    box-shadow: 0px 0px 3px 3px inset #100f11;    
+  }
+  .Back img{
+    width: 35px;
   }
   .spell{
     background-color: #1da40d;
-
   }

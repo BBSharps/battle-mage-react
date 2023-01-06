@@ -5,6 +5,7 @@ import Text from "./elements/text";
 import randomCard from "./elements/random-card";
 import { useState } from "react";
 import backSymbol from "./elements/back-symbol.png";
+import spellSymbol from "./elements/spell-symbol.png";
 import "./App.css";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     aiHp: 35,
   });
   const [cardBoardState, setCardBoardState] = useState({
-    spellPlay: { type: "Back", dmg: 0, symbol: backSymbol },
+    spellPlay: { type: "spell", dmg: 0, symbol: spellSymbol },
     aiPlay1: randomCard(),
     aiPlay2: randomCard(),
     aiPlay3: randomCard(),
