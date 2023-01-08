@@ -82,9 +82,6 @@ your health ${nextMage.playerHp}
 
 
 
-
-
-
 `,
   });
 }
