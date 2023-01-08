@@ -6,21 +6,25 @@ function SpellWindow() {
     <div className="spellWindow">
       {spellPop.isTrue ? (
         <div className={"spell-pop"}>
-          <p>spell</p>
+          <p>{spellPop.text}</p>
         </div>
       ) : null}
-      {[1, 2, 3].map((number) => {
+      {[
+        "Play 3 Mana and get + 2 damage",
+        "Play 3 of any Element and get + 3 damage",
+        "Play 3 unique elements and get + 5 damage",
+      ].map((number) => {
         return (
           <img
             key={number}
             onMouseEnter={() => {
-              setSpellPop({ isTrue: true });
+              setSpellPop({ isTrue: true, text: number });
             }}
             onMouseLeave={() => {
-              setSpellPop({ isTrue: false });
+              setSpellPop({ isTrue: false, text: number });
             }}
             onTouchStart={() => {
-              setSpellPop({ isTrue: true });
+              setSpellPop({ isTrue: true, text: number });
             }}
             onTouchEnd={() => {
               setSpellPop({ isTrue: false });

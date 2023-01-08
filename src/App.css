@@ -12,6 +12,18 @@
   display: flex;
   justify-content: center;
 }
+.linkMobile {
+  width: 320px;
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #A40d91;
+  font-family: 'Nanum Brush Script', cursive;
+font-size: 20px;
+color: white;
+text-align: center;
+}
 .mobileWindow {
         border-radius: 16px;
         width: 320px;
@@ -27,28 +39,36 @@
 
   .text {
     background-color: #A40d91;
-    width: 90%;
-    height: 90%;
+    width: 300px;
+  height: 552px;
     position: fixed;
     text-align: center;
-    margin: 20px;
     z-index: 2;
     font-family: 'Nanum Brush Script', cursive;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px; 
+  margin-top: 6px;
+   }
+   .text button {
+    background-color:white ;
+    color:#A40d91;
+    border-radius: 16px;    
    }
   .spellWindow {
     background-color: #1da40d;
     border-radius: 16px;
     padding: 3px 10px 0 0;
-    width: 55%;
+    width: 60%;
     height: 10%;
     display: flex;
     position: relative; top: 35px;
     z-index: 1;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 0 auto;
     box-shadow: -2px 2px 0px 0px black;
     
@@ -60,14 +80,19 @@
     height: 45px;
   }
   .spell-pop{
-    height: 81px;
+    height: 100px;
     width: 75px;
     margin-top: -80px;
     background-color: #1da40d;
-    border: 5px solid black;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     flex-shrink: 0;
+  }
+  .spell-pop p {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 16px;
+    color: white;
   }
   .boardWindow {
     background-color: rgb(117, 72, 3);
