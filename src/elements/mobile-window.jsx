@@ -40,9 +40,7 @@ function MobileWindow() {
     Mana permiates all.
     
     
-    Click the screen to play
-    
-    
+    Click the screen to play    
     
     
     

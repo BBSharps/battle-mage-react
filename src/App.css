@@ -7,10 +7,18 @@
 }
 
 .App {
-  width: auto;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+}
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #13042c;
+
 }
 .linkMobile {
   width: 320px;
@@ -23,6 +31,7 @@
 font-size: 20px;
 color: white;
 text-align: center;
+border-radius: 16px;
 }
 .mobileWindow {
         border-radius: 16px;
@@ -52,10 +61,12 @@ text-align: center;
   border-radius: 16px; 
   margin-top: 6px;
    }
-   .text button {
+   button {
     background-color:white ;
     color:#A40d91;
     border-radius: 16px;    
+    height: 45px;
+    width: 81px;
    }
   .spellWindow {
     background-color: #1da40d;
