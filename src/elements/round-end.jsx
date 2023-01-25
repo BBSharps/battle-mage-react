@@ -19,7 +19,7 @@ function roundEnd(mage, setMage, setText, cardBoardState, setCardBoardState) {
     board.aiPlay2.type,
     board.aiPlay3.type,
   ]);
-  console.log(board);
+  
 
   const nextBoard = structuredClone(cardBoardState);
   const nextMage = structuredClone(mage);
